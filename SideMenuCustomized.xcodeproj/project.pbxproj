@@ -99,13 +99,12 @@
 		E31542ED2720AE1100B030C3 /* SideMenuCustomized */ = {
 			isa = PBXGroup;
 			children = (
-				E31542EE2720AE1100B030C3 /* AppDelegate.swift */,
 				E31542F02720AE1100B030C3 /* SceneDelegate.swift */,
+				E31542EE2720AE1100B030C3 /* AppDelegate.swift */,
+				E31543202720B20E00B030C3 /* Features */,
+				E315431E2720AE4C00B030C3 /* Helpers */,
 				E31542F22720AE1100B030C3 /* ViewController.swift */,
 				E31542F42720AE1100B030C3 /* Main.storyboard */,
-				E31542F72720AE1300B030C3 /* Assets.xcassets */,
-				E31542F92720AE1300B030C3 /* LaunchScreen.storyboard */,
-				E31542FC2720AE1300B030C3 /* Info.plist */,
 			);
 			path = SideMenuCustomized;
 			sourceTree = "<group>";
@@ -125,6 +124,23 @@
 				E31543112720AE1400B030C3 /* SideMenuCustomizedUITestsLaunchTests.swift */,
 			);
 			path = SideMenuCustomizedUITests;
+			sourceTree = "<group>";
+		};
+		E315431E2720AE4C00B030C3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E31542FC2720AE1300B030C3 /* Info.plist */,
+				E31542F92720AE1300B030C3 /* LaunchScreen.storyboard */,
+				E31542F72720AE1300B030C3 /* Assets.xcassets */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E31543202720B20E00B030C3 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Features;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
