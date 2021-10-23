@@ -6,36 +6,19 @@
 //
 
 import UIKit
-protocol SideMenuDelegate {
-    func didSelectMenuItem(menuItem: SideMenuViewController.SideMenuOptions)
+protocol SideMenuDelegate: AnyObject {
+    func didSelectMenuItem(menuItem: SideMenuOptions)
 }
 
 class SideMenuViewController: UIViewController {
-    enum SideMenuOptions: String, CaseIterable {
-       case home = "Home"
-       case aboutus = "About us"
-       case contactus = "Contact us"
-       case logout = "Logout"
-       
-        var sideItemLogo: String {
-            switch self {
-            case .home:
-                return "homekit"
-            case .aboutus:
-                return "info.circle.fill"
-            case .contactus:
-                return "person.crop.circle.fill"
-            case .logout:
-                return "rectangle.portrait.and.arrow.right.fill"
-            }
-        }
-    }
-    private var menuTableView: UITableView = {
+    var menuTableView: UITableView = {
         let tableView = UITableView()
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         tableView.backgroundColor = .clear
+        tableView.isUserInteractionEnabled = true
         return tableView
     }()
+    weak var sideMenuDelegate: SideMenuDelegate?
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = AppColors.secondaryBackgroundColor
@@ -57,18 +40,23 @@ extension SideMenuViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let menuItem = SideMenuOptions.allCases[indexPath.row]
+        let isCellSelected = ViewControllersHandler.shared.selectedMenuItem?.rawValue == menuItem.rawValue
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         var contentConfig = cell.defaultContentConfiguration()
-        contentConfig.text = SideMenuOptions.allCases[indexPath.row].rawValue
+        contentConfig.text = menuItem.rawValue
         contentConfig.image = UIImage(systemName: SideMenuOptions.allCases[indexPath.row].sideItemLogo)
-        contentConfig.textProperties.color = .white
-        contentConfig.imageProperties.tintColor = .white
+        contentConfig.textProperties.color = isCellSelected ? AppColors.secondaryBackgroundColor : .white
+        contentConfig.imageProperties.tintColor = isCellSelected ? AppColors.secondaryBackgroundColor : .white
         cell.contentConfiguration = contentConfig
-        cell.backgroundColor = AppColors.secondaryBackgroundColor
+        cell.backgroundColor = isCellSelected ? .white : AppColors.secondaryBackgroundColor
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        tableView.deselectRow(at: indexPath, animated: false)
+        let menuItem = SideMenuOptions.allCases[indexPath.row]
+        menuItem.viewController.sideMenuClosedHandle()
+        sideMenuDelegate?.didSelectMenuItem(menuItem: menuItem)
     }
     
 }

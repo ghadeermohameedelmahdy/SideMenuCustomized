@@ -14,4 +14,19 @@ extension UIViewController {
          statusBar.backgroundColor = color
          UIApplication.shared.keyWindow?.addSubview(statusBar)
     }
+    func sideMenuOpenedHandle (){
+        self.view.clipsToBounds = true
+        self.view.frame.origin.y = 100
+        self.view.layer.cornerRadius = 40
+        view.layer.opacity = 0.5
+        self.setStatusBarColor(AppColors.secondaryBackgroundColor )
+        self.navigationController?.navigationBar.backgroundColor = AppColors.secondaryBackgroundColor
+    }
+    func sideMenuClosedHandle (){
+        self.view.frame.origin.y = 0
+        self.view.layer.cornerRadius = 0
+        view.layer.opacity = 1
+        self.setStatusBarColor(AppColors.mainBackgroundColor)
+        self.navigationController?.navigationBar.backgroundColor = AppColors.mainBackgroundColor
+    }
 }

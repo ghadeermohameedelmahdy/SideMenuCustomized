@@ -16,11 +16,16 @@
 		E31543062720AE1400B030C3 /* SideMenuCustomizedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31543052720AE1400B030C3 /* SideMenuCustomizedTests.swift */; };
 		E31543102720AE1400B030C3 /* SideMenuCustomizedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E315430F2720AE1400B030C3 /* SideMenuCustomizedUITests.swift */; };
 		E31543122720AE1400B030C3 /* SideMenuCustomizedUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31543112720AE1400B030C3 /* SideMenuCustomizedUITestsLaunchTests.swift */; };
-		E31543222720B5C500B030C3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31543212720B5C500B030C3 /* HomeViewController.swift */; };
+		E31543222720B5C500B030C3 /* MainParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31543212720B5C500B030C3 /* MainParentViewController.swift */; };
 		E31543242720B5D700B030C3 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31543232720B5D700B030C3 /* SideMenuViewController.swift */; };
 		E31543272720C64100B030C3 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31543262720C64100B030C3 /* UIViewControllerExt.swift */; };
 		E31543292720C70100B030C3 /* AppColorsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31543282720C70100B030C3 /* AppColorsConstants.swift */; };
-		E315432B2720D68700B030C3 /* HiddenLayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E315432A2720D68700B030C3 /* HiddenLayerView.swift */; };
+		E3ABC089272440E200521F89 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ABC088272440E200521F89 /* InfoViewController.swift */; };
+		E3ABC08B2724411700521F89 /* ContactusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ABC08A2724411700521F89 /* ContactusViewController.swift */; };
+		E3ABC08D2724444D00521F89 /* ViewControllersHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ABC08C2724444D00521F89 /* ViewControllersHandler.swift */; };
+		E3ABC08F2724456800521F89 /* SideMenuOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ABC08E2724456800521F89 /* SideMenuOptions.swift */; };
+		E3ABC09227244A7C00521F89 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ABC09127244A7C00521F89 /* HomeViewController.swift */; };
+		E3ABC094272467D100521F89 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ABC093272467D100521F89 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,11 +59,16 @@
 		E315430B2720AE1400B030C3 /* SideMenuCustomizedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SideMenuCustomizedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E315430F2720AE1400B030C3 /* SideMenuCustomizedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCustomizedUITests.swift; sourceTree = "<group>"; };
 		E31543112720AE1400B030C3 /* SideMenuCustomizedUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCustomizedUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		E31543212720B5C500B030C3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E31543212720B5C500B030C3 /* MainParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainParentViewController.swift; sourceTree = "<group>"; };
 		E31543232720B5D700B030C3 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		E31543262720C64100B030C3 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 		E31543282720C70100B030C3 /* AppColorsConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColorsConstants.swift; sourceTree = "<group>"; };
-		E315432A2720D68700B030C3 /* HiddenLayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenLayerView.swift; sourceTree = "<group>"; };
+		E3ABC088272440E200521F89 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		E3ABC08A2724411700521F89 /* ContactusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactusViewController.swift; sourceTree = "<group>"; };
+		E3ABC08C2724444D00521F89 /* ViewControllersHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllersHandler.swift; sourceTree = "<group>"; };
+		E3ABC08E2724456800521F89 /* SideMenuOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOptions.swift; sourceTree = "<group>"; };
+		E3ABC09127244A7C00521F89 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E3ABC093272467D100521F89 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,11 +159,9 @@
 		E31543202720B20E00B030C3 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				E3ABC0902724496500521F89 /* controllers */,
+				E3ABC0872724408D00521F89 /* features viewcontrollers */,
 				E31542F42720AE1100B030C3 /* Main.storyboard */,
-				E31542F22720AE1100B030C3 /* CoordinatorViewController.swift */,
-				E31543212720B5C500B030C3 /* HomeViewController.swift */,
-				E31543232720B5D700B030C3 /* SideMenuViewController.swift */,
-				E315432A2720D68700B030C3 /* HiddenLayerView.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -164,6 +172,29 @@
 				E31543262720C64100B030C3 /* UIViewControllerExt.swift */,
 			);
 			path = extensions;
+			sourceTree = "<group>";
+		};
+		E3ABC0872724408D00521F89 /* features viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				E31543212720B5C500B030C3 /* MainParentViewController.swift */,
+				E3ABC088272440E200521F89 /* InfoViewController.swift */,
+				E3ABC08A2724411700521F89 /* ContactusViewController.swift */,
+				E3ABC09127244A7C00521F89 /* HomeViewController.swift */,
+				E3ABC093272467D100521F89 /* SettingsViewController.swift */,
+			);
+			path = "features viewcontrollers";
+			sourceTree = "<group>";
+		};
+		E3ABC0902724496500521F89 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E3ABC08E2724456800521F89 /* SideMenuOptions.swift */,
+				E3ABC08C2724444D00521F89 /* ViewControllersHandler.swift */,
+				E31543232720B5D700B030C3 /* SideMenuViewController.swift */,
+				E31542F22720AE1100B030C3 /* CoordinatorViewController.swift */,
+			);
+			path = controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,12 +330,17 @@
 			files = (
 				E31542F32720AE1100B030C3 /* CoordinatorViewController.swift in Sources */,
 				E31542EF2720AE1100B030C3 /* AppDelegate.swift in Sources */,
+				E3ABC08B2724411700521F89 /* ContactusViewController.swift in Sources */,
+				E3ABC08D2724444D00521F89 /* ViewControllersHandler.swift in Sources */,
 				E31543272720C64100B030C3 /* UIViewControllerExt.swift in Sources */,
 				E31543292720C70100B030C3 /* AppColorsConstants.swift in Sources */,
-				E315432B2720D68700B030C3 /* HiddenLayerView.swift in Sources */,
 				E31542F12720AE1100B030C3 /* SceneDelegate.swift in Sources */,
 				E31543242720B5D700B030C3 /* SideMenuViewController.swift in Sources */,
-				E31543222720B5C500B030C3 /* HomeViewController.swift in Sources */,
+				E3ABC08F2724456800521F89 /* SideMenuOptions.swift in Sources */,
+				E3ABC089272440E200521F89 /* InfoViewController.swift in Sources */,
+				E3ABC094272467D100521F89 /* SettingsViewController.swift in Sources */,
+				E31543222720B5C500B030C3 /* MainParentViewController.swift in Sources */,
+				E3ABC09227244A7C00521F89 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
