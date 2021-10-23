@@ -9,13 +9,18 @@
 /* Begin PBXBuildFile section */
 		E31542EF2720AE1100B030C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31542EE2720AE1100B030C3 /* AppDelegate.swift */; };
 		E31542F12720AE1100B030C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31542F02720AE1100B030C3 /* SceneDelegate.swift */; };
-		E31542F32720AE1100B030C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31542F22720AE1100B030C3 /* ViewController.swift */; };
+		E31542F32720AE1100B030C3 /* CoordinatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31542F22720AE1100B030C3 /* CoordinatorViewController.swift */; };
 		E31542F62720AE1100B030C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E31542F42720AE1100B030C3 /* Main.storyboard */; };
 		E31542F82720AE1300B030C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E31542F72720AE1300B030C3 /* Assets.xcassets */; };
 		E31542FB2720AE1300B030C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E31542F92720AE1300B030C3 /* LaunchScreen.storyboard */; };
 		E31543062720AE1400B030C3 /* SideMenuCustomizedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31543052720AE1400B030C3 /* SideMenuCustomizedTests.swift */; };
 		E31543102720AE1400B030C3 /* SideMenuCustomizedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E315430F2720AE1400B030C3 /* SideMenuCustomizedUITests.swift */; };
 		E31543122720AE1400B030C3 /* SideMenuCustomizedUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31543112720AE1400B030C3 /* SideMenuCustomizedUITestsLaunchTests.swift */; };
+		E31543222720B5C500B030C3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31543212720B5C500B030C3 /* HomeViewController.swift */; };
+		E31543242720B5D700B030C3 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31543232720B5D700B030C3 /* SideMenuViewController.swift */; };
+		E31543272720C64100B030C3 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31543262720C64100B030C3 /* UIViewControllerExt.swift */; };
+		E31543292720C70100B030C3 /* AppColorsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31543282720C70100B030C3 /* AppColorsConstants.swift */; };
+		E315432B2720D68700B030C3 /* HiddenLayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E315432A2720D68700B030C3 /* HiddenLayerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +44,7 @@
 		E31542EB2720AE1100B030C3 /* SideMenuCustomized.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SideMenuCustomized.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E31542EE2720AE1100B030C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E31542F02720AE1100B030C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E31542F22720AE1100B030C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E31542F22720AE1100B030C3 /* CoordinatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorViewController.swift; sourceTree = "<group>"; };
 		E31542F52720AE1100B030C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E31542F72720AE1300B030C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E31542FA2720AE1300B030C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +54,11 @@
 		E315430B2720AE1400B030C3 /* SideMenuCustomizedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SideMenuCustomizedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E315430F2720AE1400B030C3 /* SideMenuCustomizedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCustomizedUITests.swift; sourceTree = "<group>"; };
 		E31543112720AE1400B030C3 /* SideMenuCustomizedUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCustomizedUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E31543212720B5C500B030C3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E31543232720B5D700B030C3 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		E31543262720C64100B030C3 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
+		E31543282720C70100B030C3 /* AppColorsConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColorsConstants.swift; sourceTree = "<group>"; };
+		E315432A2720D68700B030C3 /* HiddenLayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenLayerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +109,11 @@
 		E31542ED2720AE1100B030C3 /* SideMenuCustomized */ = {
 			isa = PBXGroup;
 			children = (
+				E31542FC2720AE1300B030C3 /* Info.plist */,
 				E31542F02720AE1100B030C3 /* SceneDelegate.swift */,
 				E31542EE2720AE1100B030C3 /* AppDelegate.swift */,
 				E31543202720B20E00B030C3 /* Features */,
 				E315431E2720AE4C00B030C3 /* Helpers */,
-				E31542F22720AE1100B030C3 /* ViewController.swift */,
-				E31542F42720AE1100B030C3 /* Main.storyboard */,
 			);
 			path = SideMenuCustomized;
 			sourceTree = "<group>";
@@ -129,9 +138,10 @@
 		E315431E2720AE4C00B030C3 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				E31542FC2720AE1300B030C3 /* Info.plist */,
+				E31543252720C62400B030C3 /* extensions */,
 				E31542F92720AE1300B030C3 /* LaunchScreen.storyboard */,
 				E31542F72720AE1300B030C3 /* Assets.xcassets */,
+				E31543282720C70100B030C3 /* AppColorsConstants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -139,8 +149,21 @@
 		E31543202720B20E00B030C3 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				E31542F42720AE1100B030C3 /* Main.storyboard */,
+				E31542F22720AE1100B030C3 /* CoordinatorViewController.swift */,
+				E31543212720B5C500B030C3 /* HomeViewController.swift */,
+				E31543232720B5D700B030C3 /* SideMenuViewController.swift */,
+				E315432A2720D68700B030C3 /* HiddenLayerView.swift */,
 			);
 			path = Features;
+			sourceTree = "<group>";
+		};
+		E31543252720C62400B030C3 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E31543262720C64100B030C3 /* UIViewControllerExt.swift */,
+			);
+			path = extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,9 +297,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E31542F32720AE1100B030C3 /* ViewController.swift in Sources */,
+				E31542F32720AE1100B030C3 /* CoordinatorViewController.swift in Sources */,
 				E31542EF2720AE1100B030C3 /* AppDelegate.swift in Sources */,
+				E31543272720C64100B030C3 /* UIViewControllerExt.swift in Sources */,
+				E31543292720C70100B030C3 /* AppColorsConstants.swift in Sources */,
+				E315432B2720D68700B030C3 /* HiddenLayerView.swift in Sources */,
 				E31542F12720AE1100B030C3 /* SceneDelegate.swift in Sources */,
+				E31543242720B5D700B030C3 /* SideMenuViewController.swift in Sources */,
+				E31543222720B5C500B030C3 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
