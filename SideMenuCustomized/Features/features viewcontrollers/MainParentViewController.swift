@@ -27,11 +27,12 @@ class MainParentViewController: UIViewController {
         self.navigationController?.navigationBar.backgroundColor = AppColors.mainBackgroundColor
         let listIcon = UIImage(systemName: "list.dash")
         listIcon?.withTintColor(.white)
+        self.navigationController?.navigationBar.tintColor = .black
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(image:  listIcon, style: .plain , target: self, action: #selector(menuAction))
     }
     @objc func menuAction (){
         delegate?.didTapSideMenu()
-            // to handle view controller ui
+        // to handle view controller ui
         sideMenuOpenedHandle()
     }
    

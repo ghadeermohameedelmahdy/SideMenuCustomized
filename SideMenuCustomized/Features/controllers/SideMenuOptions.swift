@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+// this is enum to add side menu viewcontrollers
 enum SideMenuOptions: String, CaseIterable {
    case home = "Home"
    case aboutus = "About us"
@@ -22,7 +23,7 @@ enum SideMenuOptions: String, CaseIterable {
         case .contactus:
             return "person.crop.circle.fill"
         case .settings:
-            return "rectangle.portrait.and.arrow.right.fill"
+            return "gear.circle"
         }
     }
     var viewController: MainParentViewController {

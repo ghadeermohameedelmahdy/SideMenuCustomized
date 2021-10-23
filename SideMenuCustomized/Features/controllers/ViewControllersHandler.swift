@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+// this class to create single object from each viewcontroller
 class ViewControllersHandler {
     static let shared = ViewControllersHandler()
     private init (){}
